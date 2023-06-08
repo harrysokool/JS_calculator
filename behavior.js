@@ -10,4 +10,9 @@ function updateInput() {
   input.setAttribute("value", 7);
 };
 
+function clearInput() {
+  let input = document.getElementById("result");
+  input.setAttribute("value", 0);
+};
+
 

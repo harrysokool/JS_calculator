@@ -10,6 +10,15 @@ body {
   text-align: center;
 }
 
+.div_input {
+  margin-bottom: 5px;
+}
+
+.div_calc {
+  margin-top: 70px;
+}
+
+
 .calc_result {
   width: 324px;
   text-align: right;
@@ -22,17 +31,17 @@ body {
 }
 
 .num_button, .op_button {
-  /* background-color: rgb(171, 171, 171); */
-  /* color: black;
-  border-style: solid;
-  border-color: black; */
+  color: black;
   width: 80px;
   height: 80px;
   font-size: 20pt;
+  margin-bottom: 3px;
 }
 
 .clear_button {
   width: 332px;
   height: 80px;
+  font-size: 20pt;
+  color: black;
 }
 
