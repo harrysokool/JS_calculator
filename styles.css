@@ -55,8 +55,13 @@ body {
   border-style: solid;
 }
 
-.calc_button:active, .clear_button:active {
+.calc_button:hover, .clear_button:hover {
   opacity: 70%;
+}
+
+.calc_button:active, .clear_button:active {
+  background-color: rgb(249, 167, 181);
+  opacity: 100%;
 }
 
 
