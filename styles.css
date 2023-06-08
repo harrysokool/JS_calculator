@@ -4,6 +4,9 @@ body {
 
 .h1_header {
   text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: black;
 }
 
 .section_calc {
@@ -27,21 +30,59 @@ body {
   border-radius: 3px;
   border-style: solid;
   border-width: 3px;
-  pointer-events: none;
+  /* pointer-events: none; */
+  background-color: white;
 }
 
-.num_button, .op_button {
+.calc_button {
   color: black;
   width: 80px;
   height: 80px;
   font-size: 20pt;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  background-color: rgb(255, 196, 205);
+  border-style: solid;
 }
 
 .clear_button {
+  color: black;
   width: 332px;
   height: 80px;
   font-size: 20pt;
-  color: black;
+  border-radius: 5px;
+  background-color: rgb(255, 196, 205);
+  border-style: solid;
+}
+
+.calc_button:active, .clear_button:active {
+  opacity: 70%;
+}
+
+
+.output{
+  width: 310px;
+  height: 65px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  margin-left: 582px;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand{
+  color: rgba(255,255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand{
+  color: white;
+  font-size: 2.5rem;
 }
 

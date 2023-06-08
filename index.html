@@ -18,35 +18,40 @@
 
         <main>
           <section class="section_calc">
-            <div class="div_input">
-              <input type="text" id="result" class="calc_result" value="0">
+            <div class="output">
+              <div class="prev-operand"></div>
+              <div class="curr-operand"></div>
             </div>
-
-            <div class="row">
-              <button id="button7" class="num_button" onclick="updateInput()">7</button>
-              <button id="button8" class="num_button">8</button>
-              <button id="button9" class="num_button">9</button>
-              <button id="button_div" class="op_button">÷</button>
+            <!-- <div class="div_input">
+              <output type="text" id="result" class="calc_result" value="0" maxlength="12">
+            </div> -->
+            <div>
+              <div class="row">
+                <button data-number class="calc_button" onclick="updateInput()">7</button>
+                <button data-number class="calc_button">8</button>
+                <button data-number class="calc_button">9</button>
+                <button data-op class="calc_button">÷</button>
+              </div>
+              <div class="row">
+                <button data-number class="calc_button">4</button>
+                <button data-number class="calc_button">5</button>
+                <button data-number class="calc_button">6</button>
+                <button data-op class="calc_button">x</button>
+              </div>
+              <div class="row">
+                <button data-number class="calc_button">1</button>
+                <button data-number class="calc_button">2</button>
+                <button data-number class="calc_button">3</button>
+                <button data-op class="calc_button">+</button>
+              </div>
+              <div class="row">
+                <button data-number class="calc_button">0</button>
+                <button data-number class="calc_button">.</button>
+                <button data-eq class="calc_button">=</button>
+                <button data-op class="calc_button">-</button>
+              </div>
+              <button data_clear class="clear_button" onclick="clearInput()">clear</button>
             </div>
-            <div class="row">
-              <button id="button4" class="num_button">4</button>
-              <button id="button5" class="num_button">5</button>
-              <button id="button6" class="num_button">6</button>
-              <button id="button_mul" class="op_button">x</button>
-            </div>
-            <div class="row">
-              <button id="button1" class="num_button">1</button>
-              <button id="button2" class="num_button">2</button>
-              <button id="button3" class="num_button">3</button>
-              <button id="button_add" class="op_button">+</button>
-            </div>
-            <div class="row">
-              <button id="button0" class="num_button">0</button>
-              <button id="button_dot" class="op_button">.</button>
-              <button id="button_eq" class="op_button">=</button>
-              <button id="button_min" class="op_button">-</button>
-            </div>
-            <button id="button_clear" class="clear_button" onclick="clearInput()">clear</button>
           </section>
         </main>
       </div>
