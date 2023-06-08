@@ -17,21 +17,8 @@ body {
   margin-bottom: 5px;
 }
 
-.div_calc {
+.calculator {
   margin-top: 70px;
-}
-
-
-.calc_result {
-  width: 324px;
-  text-align: right;
-  height: 60px;
-  font-size: 30pt;
-  border-radius: 3px;
-  border-style: solid;
-  border-width: 3px;
-  /* pointer-events: none; */
-  background-color: white;
 }
 
 .calc_button {
@@ -43,6 +30,7 @@ body {
   border-radius: 5px;
   background-color: rgb(255, 196, 205);
   border-style: solid;
+  cursor: pointer;
 }
 
 .clear_button {
@@ -53,6 +41,7 @@ body {
   border-radius: 5px;
   background-color: rgb(255, 196, 205);
   border-style: solid;
+  cursor: pointer;
 }
 
 .calc_button:hover, .clear_button:hover {
@@ -66,6 +55,8 @@ body {
 
 
 .output{
+  color:white;
+  font-size: 35px;
   width: 310px;
   height: 65px;
   margin-bottom: 5px;
@@ -81,12 +72,12 @@ body {
   word-break: break-all;
 }
 
-.output .previous-operand{
+.output .prev-operand{
   color: rgba(255,255, 255, 0.75);
   font-size: 1.5rem;
 }
 
-.output .current-operand{
+.output .curr-operand{
   color: white;
   font-size: 2.5rem;
 }
