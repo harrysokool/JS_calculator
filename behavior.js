@@ -1,25 +1,36 @@
+const buttons = document.querySelectorAll('button');  // array of buttons
+const display = document.querySelector('.display');   // the display
+let displayText = [];                                 // formula
+display.textContent = 0;
 
-const buttons = document.querySelectorAll('button');
-const display = document.querySelector('.display');
+function calcualte(button) {                          
+  let button_value = button.textContent;                 
+  let result = 0; 
 
-let displayText = [];
-
-// show numbers on display
-// function for clear
-// join all the numbers
-function calcualte(button) {
-  
-  let button_value = button.textContent;
+  // showing display with numbers
   displayText.push(button_value); 
-  let joinDisplayText = displayText.join("");
+  let joinDisplayText = displayText.join("");    
   display.textContent = joinDisplayText;
 
-  console.log(displayText);
+  if (button_value == "=") {
+    displayText.pop();
+    joinDisplayText = displayText.join("");
+    result = eval(joinDisplayText);
+    display.textContent = result;
+    displayText = [];
+    displayText.push(result);
+  }
 
+  // clear function
+  if (button_value ==  "clear") {
+    displayText = [];
+    display.textContent = 0;
+  }
 }
 
 // for each button, add event listener when click, call back when button is clicked.
 buttons.forEach(button => button.addEventListener('click', () => calcualte(button)));
+
 
 
 
