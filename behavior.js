@@ -1,14 +1,20 @@
 
 const buttons = document.querySelectorAll('button');
-const display = document.querySelector('output');
+const display = document.querySelector('.display');
+
+let displayText = [];
 
 // show numbers on display
 // function for clear
 // join all the numbers
-
 function calcualte(button) {
-  console.log(button);
+  
+  let button_value = button.textContent;
+  displayText.push(button_value); 
+  let joinDisplayText = displayText.join("");
+  display.textContent = joinDisplayText;
 
+  console.log(displayText);
 
 }
 
