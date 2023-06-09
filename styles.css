@@ -1,5 +1,6 @@
 body {
   background-color: antiquewhite;
+  width: 1495px;
 }
 
 .h1_header {
@@ -11,6 +12,11 @@ body {
 
 .section_calc {
   text-align: center;
+}
+
+.buttons {
+  width:340px;
+  margin-left: 578px;
 }
 
 .div_input {

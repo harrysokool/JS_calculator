@@ -13,6 +13,7 @@ class Calculator {
 
 // clear everything in the output box
 function clear() {
+  
 };
 
 // add input
