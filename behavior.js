@@ -1,38 +1,20 @@
-const number_button = document.querySelectorAll('[data_number]');
-const op_button = document.querySelectorAll('[data_op]');
-const eq_button = document.querySelector('[data_eq]');
-const clear_button = document.querySelector('[data_clear]');
-const prev_op = document.querySelector('[prev_operand]');
-const curr_op = document.querySelector('[curr_operand]');
 
-class Calculator {
-  constructor(prev_op, curr_op) {
-    this.prev_op = prev_op;
-  }
+const buttons = document.querySelectorAll('button');
+const display = document.querySelector('output');
+
+// show numbers on display
+// function for clear
+// join all the numbers
+
+function calcualte(button) {
+  console.log(button);
+
+
 }
 
-// clear everything in the output box
-function clear() {
-  
-};
+// for each button, add event listener when click, call back when button is clicked.
+buttons.forEach(button => button.addEventListener('click', () => calcualte(button)));
 
-// add input
-function append(number) {
-
-};
-
-// choose operation
-function operation(operation) {
-  // can use eval 
-};
-
-function compute() {
-  
-};
-
-function updateOutput() {
-
-};
 
 
 
