@@ -1,1 +1,1 @@
-Using JavaScript to create a calculator
+Using HTML and CSS to make buttons and screen display for a calculator, then using JavaScript to make the behavior of a calculator.
